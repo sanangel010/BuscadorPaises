@@ -15,7 +15,7 @@ export class PaisInputComponent implements OnInit {
   @Output() onEnter: EventEmitter<string> = new EventEmitter();
   @Output() onDebounce: EventEmitter<string> = new EventEmitter();
 
-  // Se crea una propiedad para
+  // Se crea una propiedad para.
   @Input() placeholder: string = '';
 
   debouncer: Subject<string> = new Subject();
@@ -24,7 +24,7 @@ export class PaisInputComponent implements OnInit {
 
   // Este se dispara solo una vez, cuando el comeponente es inicialziado.
   ngOnInit(): void {
-    // Se hace la suscripción    
+    // Se hace la suscripción.    
     this.debouncer
     .pipe(
       // debounceTime: permite hacer un delay de avcuerdo a un parámetro de tiempo.
